@@ -54,14 +54,27 @@
 1. create a database.sqlite file inside database folder
 2. Edit config to use sqlite by adding
 3. DB_CONNECTION=sqlite
-4. DB_DATABASE=/mnt/d/queuedeerproject/database/database.sqlite (absolute full path to database). Change it according to ur
+4. DB_DATABASE=/mnt/d/queuedeerproject/database/database.sqlite (absolute full path to database). Change it according to
+   ur
    location
 
-### One time run: php artisan migrate
+### Migrate Table RUn
+
+```shell
+php artisan migrate
+```
 
 ### Run MailPit in terminal 1 (must be keep running)
 
-### Run "php artisan queue:work" to run laravel queue:worker in terminal 2 (must be keep running)
+```shell
+./mailpit
+```
+
+### Run queue worker to run laravel queue:worker in terminal 2 (must be keep running)
+
+```shell
+php artisan queue:work
+```
 
 ### Use Final command to demonstrate the flow in terminal 3
 
@@ -74,8 +87,8 @@ command Signature is
 php order {email} {amount}
 ```
 
-
 ### Testing
+
 ```php
 php artisan test
 ```
