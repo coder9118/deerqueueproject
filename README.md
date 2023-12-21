@@ -84,7 +84,7 @@ php artisan order rahulkumar9118@gmail.com 30
 
 ```php
 command Signature is 
-php order {email} {amount}
+php artisan order {email} {amount}
 ```
 
 ### Testing
